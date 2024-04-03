@@ -1,11 +1,31 @@
 <!DOCTYPE html>
+<!-- Stella's File Store File Uploader
+v2024.0401.0
+
+https://github.com/ThatStella7922/files-site-uploader
+
+Uses Google Fonts.
+-->
+
 <html>
     <head>
         <meta charset="utf-8">
+        <title>Upload - Stella's File Store</title>
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi, viewport-fit=cover"/>
+        <link rel="stylesheet" href="files-site-uploader-styleshit.css">
+        
+        <!-- OpenGraph tags -->
+		<meta property="og:title" content="Stella's File Store - Upload" />
+		<meta property="og:description" content="Upload files to Stella's File Store" />
+		
+		<!-- Fonts --> 	
+ 		<link rel="preconnect" href="https://fonts.googleapis.com">
+ 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ 		<link href="//fonts.googleapis.com/css2?family=Hind:wght@300;400;500&display=swap" rel="stylesheet">
     </head>
     
     <body>
-
+    
         <?php
         if(isset($_POST['submit'])){ //Begin with a check to see if the form was submitted!
             //Begin by validating by checking if the destination directory was submitted
@@ -90,9 +110,9 @@
                 <?php echo $statusMessage;?>
             </div>
 
-            <div id="file-browser">
-                <h3>File browser for navigating paths</h3>
-                <iframe src="//files.thatstel.la" title="Stella's File Store" width="99%" height="700"></iframe>
+			<h3>File browser for navigating paths</h3>
+            <div id="file-browser-container">
+                <iframe id="file-browser" src="//files.thatstel.la" title="Stella's File Store"></iframe>
             </div>
 
         </div>

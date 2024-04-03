@@ -1,0 +1,85 @@
+/*
+ 
+files.thatstel.la/upload stylesheet
+
+v2024.0401.0
+*/
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color:#ffffff;
+    padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+}
+
+h1 {
+    font-weight: 400;
+}
+
+.center {
+    text-align: center
+}
+
+.centerimg {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+/* use to center images */
+}
+
+.link {
+    color:#E872E2;
+}
+
+#file-browser-container {
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+}
+
+#master {
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#file-browser {
+    width: 100%;
+    height: 80%;
+}
+    
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    font-size: 0.8em;
+    background-color: rgba(255, 255, 255, 0.85);
+    text-align: center;
+}
+
+/* the below applies when dark mode is enabled :fr:*/
+@media (prefers-color-scheme: dark) {
+    * {
+        color:#FFFFFF;
+    }
+
+    input {
+        color: #000000;
+    }
+
+    #inputFile {
+        color: #FFFFFF;
+    }
+
+    .footer {
+        background-color: rgba(24, 24, 24, 0.85);
+    }
+    
+    body {
+        background-color:#141414;
+    }
+
+}
